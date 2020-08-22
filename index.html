@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <title>Dashboard</title>
 </head>
 
-<body onload="the_fun()">
+<body onload="the_fun()" style="height: 100%;">
 
   <div class="initial" id="before">
     <div class="spinner-grow text-primary" role="status">
@@ -39,94 +40,266 @@
   </div>
 
   
-  <div class="hidd ze_op" id="after">
+  <div class="hidd ze_op " id="after">
+    
 
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs" id="tab_root">
       <li class="nav-item">
         <a class="nav-link active" data-toggle="tab" href="#profile">Profile</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#task">Tasks</a>
+        <a class="nav-link" data-toggle="tab" href="#task"><i class="fas fa-tasks"></i>Tasks</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" data-toggle="tab" href="#ranking">Ranking</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#faq">FAQ</a>
+      </li>
     </ul>
-      <br>
-      <br>
-      <br>
-      <br>
+    
+    
+      
   
   
-        <div class="tab-content">
-  
-          <div class="tab-pane active container" id="profile">
+        <div class="tab-content" id = "new_" >
+         
+        <!-- -------------------------------------- Home Profile Tab Starts -->
+          <div class="tab-pane active container-fluid" id="profile"  style="position: relative;">
+            
               <div class="row">
-                  <div class="col-3">
-                      <img  src="https://picsum.photos/200/300" class="img-fluid rounded-circle float-left" alt="..." style="width:100%">
-                  </div>
-                  <div class = "col-1">
-  
-                  </div>
-                  <div class="col">
-                     <br>
-                     <br>
-                      <p>Name: </p>
-                      <p>College: </p>
-                      <p>: </p>
-                          
-                     
+                  <div class="col text-center">
+                    <h2>CAMPUS AMBASSADOR</h2>
                   </div>
               </div>
-              <br><br>
-              <div class="row">
+              <div class="container-fluid text-center img_">
+                <img  src="..." class="" alt="...">   
+              </div>
+              <div class="container-fluid text-center" id="profile1"  >
+                <div class="container" >
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
                   
-                  <div class="col-3">
-                      <br><br><br>
-                      <h1 class="bold text-right">Rank</h1>
+                  <div class="row">
+                    <div class="col-2 col-sm-3 text-left"></div>
+                    <div class="col-3 col-sm-2 text-left">
+                      <h6>Name : </h6>
+                    </div>
+                    <div class="col-6 text-left">
+                      <p>Name from database</p>
+                    </div>
                   </div>
-                  <div class=" col-4">
-                      <div class="text-center">
-                          <img src="images/radiant.jpg" class="img-fluid rounded-circle" style="width: 60%;"> 
-                      </div>
+                  <div class="row">
+                    <div class="col-2 col-sm-3 text-left"></div>
+                    <div class="col-3 col-sm-2 text-left">
+                      <h6>College Name : </h6>
+                    </div>
+                    <div class="col-6 text-left">
+                      <p>College Name from database</p>
+
+                    </div>
                   </div>
-              </div>
-              <br><br>
-              <div class="progress">
-                  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:20%"></div>
+                  <div class="row">
+                    <div class="col-2 col-sm-3 text-left"></div>
+                    <div class="col-3 col-sm-2 text-left">
+                      <h6>Mail Id :</h6>
+                    </div>
+                    <div class="col-6 text-left">
+                      <p>Id from database</p>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-2 col-sm-3 text-left"></div>
+                    <div class="col-3 col-sm-2 text-left">
+                      <h6>Contact No. :</h6>
+                    </div>
+                    <div class="col-6 text-left">
+                      <p>Contact No. from database</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-2 col-sm-3 text-left"></div>
+                    <div class="col-3 col-sm-2 text-left">
+                      <h6>Rank :</h6>
+                    </div>
+                    <div class="col-6 text-left">
+                      <p>Rank from database</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-2 col-sm-3 text-left"></div>
+                    <div class="col-3 col-sm-2 text-left">
+                      <h6>Manager Name :</h6>
+                    </div>
+                    <div class="col-6 text-left">
+                      <p>Manager Name from database</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-2 col-sm-3 text-left"></div>
+                    <div class="col-3 col-sm-2 text-left">
+                      <h6>Manager No. :</h6>
+                    </div>
+                    <div class="col-6 text-left">
+                      <p>Manager No. from database</p>
+                    </div>
+                  </div>
+
+                  
+
                 </div>
+              </div>            
+              
           </div>
+
+        <!----------------------------- Home tab ends  -->
+
+      <!-- ---------------------- Task tab starts -->
   
           <div class="tab-pane container" id="task">
-              <ul class="nav nav-tabs">
-                  <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#current">Current</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#completed">Completed</a>
-                  </li>                
-                </ul>
-                <div class="tab-content">
-                  <div class="tab-pane container active" id="current">
-                    <div class="active" id="status1">
-                      <p>Everything is done!!!</p>
-                    </div>
-                    <div class="d-none" id = "status2">
-                      <p>awfqeowygficnwifgqyhfbyegdye gf</p>
-                    </div>
-                  </div>
-                  <div class="tab-pane container fade" id="completed">
-                    <p> <strong>Task1 done: scored 29 points</strong></p>
+
+
+            <div class="container-fluid" style="margin-top: 5%;" id="task_subcontainer">
+
+              <ul class="nav nav-tabs" style="padding-top: 2%;" >
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#current">Current Tasks</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#underprocess"> <i class="fas fa-spinner"></i> Under Evaluation</a>
+                </li> 
+
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#completed"> <strong>Completed</strong> </a>
+                </li>                
+              </ul>
+
+              <div class="tab-content">
+
+                <div class="tab-pane container active" id="current">
+                  <br>
+                  <br>
+                  <div class="card">
+                    <h5 class="card-header">Task - 3</h5>
+                    <div class="card-body">
+                      <h6 class="card-text">With supporting text below as a natural lead-in to additional content.</h6>
                     
+                    </div>
                   </div>
-                </div> 
-  
+
+
+                </div>
+
+                <div class="tab-pane container fade" id="underprocess">
+                  <br>
+                  <br>
+                  <div class="card ">
+                    <h5 class="card-header">Task - 2</h5>
+                    <div class="card-body">
+                      <p> Info of the task not bold as it does not matter....</p>                    
+                    </div>
+                  </div>
+                  
+                </div>
+
+
+                <div class="tab-pane container fade" id="completed">
+                  <br>
+                  <br>
+                  <div class="card">
+                    <h5 class="card-header">Task - 1</h5>
+                    <div class="card-body">
+                      <p> Info of the task not bold as it does not matter....</p>
+                      <h6 class="card-text">Scored 50</h6>
+                    
+                    </div>
+                  </div>
+                  
+                </div>
+
+
+              </div> 
+              
+            </div >
+              
+                
+
+              <br>
+              <br>
+              <br>
           </div>
-          <div class="tab-pane container" id="ranking">
-            <p>1. Meet the great the greatest Vyas</p>
-            <p>2. Meet the great Vyas</p>
-            <p>3. Meet vyas</p>
+
+      <!-------------------- Task tab ends  -->
+
+          <div class="tab-pane container" id="ranking" style="background-color: #ffffff; margin-top: 1%;">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>  
           </div>
+
+          <div class="tab-pane container-fluid" id="faq" >
+            <br>
+            <br>
+            <h3 style="color: rgb(26,8,70);">Frequently Asked Questions  <i class="fas fa-question"></i></h3>
+            <br>
+            <br>
+            <div class="container-fluid text-center" style="background-color: #ffffff;" >
+              <br>  
+
+              <div class="row" style="margin-left: 1%;"> How do we submit our work    cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh</div>
+              <button class="btn btn-primary" style="background-color: transparent; color: rgb(26,8,70);" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              <i class="fas fa-plus-circle"></i> </button>
+              
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                </div>
+              </div>
+              <hr>
+      
+              <br>
+            </div>
+          </div>
+
+
+
         </div>
 
   </div>
