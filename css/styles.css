@@ -31,8 +31,8 @@ h2{
 }
 #profile1{
     margin-top: 8% ;
-    border-top-left-radius: 10rem;
-    border-top-right-radius: 10rem;
+    border-radius: 10rem;
+    
     background-color: rgb(250, 236, 226);
     
     
