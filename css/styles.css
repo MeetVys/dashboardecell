@@ -1,3 +1,62 @@
+body{
+   /* background-color: rgb(68, 56, 48); */
+   background-color: #8ddbc5    ;
+}
+.img_{
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    
+    
+}
+img{
+    width: 220px ;
+    height: 220px;
+    border-style: solid;
+    border-color: rgb(26,8,70);
+    border-width: 5px;  
+}
+
+#tab_root{
+    background-color: rgb(235, 245, 253);
+}
+#new_{
+    background-color: #8ddbc5;
+    height: 100%;
+}
+h2{
+    margin: 3.5rem;
+    font-size: 2.5rem;
+    color: rgb(26,8,70);
+}
+#profile1{
+    margin-top: 8% ;
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+    background-color: rgb(250, 236, 226);
+    
+    
+}
+
+#task{
+    background-color: rgb(250, 236, 226);
+    border-radius: 2rem;
+
+    
+   
+}
+
+.card{
+    border-radius: 2rem;
+    border-color:rgb(26,8,70); 
+    border-width: 4px;
+    background-color: #8ddbc5;
+}
+hr{
+ 
+    border-width: 2px;
+    border-color: rgb(26,8,70);
+}
 .initial{
     position: fixed;
     top: 0%;
